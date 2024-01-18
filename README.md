@@ -12,4 +12,5 @@ A small fetch script written only in Shell
 - Distro
 - Shell
 - Terminal Colors
+
 ![An image displaying Kiwifetch in action](img/demo.png)
