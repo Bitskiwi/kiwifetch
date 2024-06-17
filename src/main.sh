@@ -1,3 +1,7 @@
+declare prev_dir="$(pwd)"
+cd ~/kiwifetch/src
+
+
 . logo.sh                                # Import logo declarations
 
 # Fetch Info
@@ -56,3 +60,5 @@ echo -e "${logo[2]} \uf31a  $distro $architecture"
 echo -e "${logo[3]} \ue795  $sh"
 echo -e "${logo[4]} \ue22b  $white$dot $red$dot $yellow$dot $green$dot $blue$dot $cyan$dot $magenta$dot $black$dot $reset"
 echo
+
+cd $prev_dir
