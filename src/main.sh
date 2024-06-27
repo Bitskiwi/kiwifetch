@@ -14,33 +14,55 @@ declare distro="$NAME"
 declare architecture="$(uname -m)"
 declare sh=$(basename $SHELL)
 
+declare distro_logo=$distro
+
+# check for specified logo
+
+case $1 in
+	"deb")
+		declare distro_logo="Debian GNU/Linux"
+		;;
+	"arch")
+		declare distro_logo="Arch Linux"
+		;;
+	"ubu")
+		declare distro_logo="Ubuntu"
+		;;
+	"fedo")
+		declare distro_logo="Fedora"
+		;;
+	"mint")
+		declare distro_logo="Linux Mint"
+		;;
+	"pop")
+		declare distro_logo="Pop!_OS"
+		;;
+	"*")
+		declare distro_logo=$distro
+		;;
+esac
+
 # Load a Logo
 
-case $distro in
+case $distro_logo in
 	"Arch Linux")
 		declare -n logo=arch
 		;;
-
 	"Ubuntu")
 		declare -n logo=ubuntu
 		;;
-
 	"Debian GNU/Linux")
 		declare -n logo=debian
 		;;
-
 	"Fedora")
 		declare -n logo=fedora
 		;;
-
 	"Linux Mint")
 		declare -n logo=mint
 		;;
-
 	"Pop!_OS")
 		declare -n logo=popos
 		;;
-	
 	*)
 		declare -n logo=na
 		;;
@@ -53,7 +75,6 @@ pad="    "
 
 # Print to screen
 
-echo
 echo -e "${logo[0]} \uf007  $user@$host"
 echo -e "${logo[1]} \uf109  $kernel"
 echo -e "${logo[2]} \uf31a  $distro $architecture"

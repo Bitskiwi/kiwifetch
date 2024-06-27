@@ -9,11 +9,11 @@ arch=(
 ) 
 
 ubuntu=(
-	"$red   ____() $reset" 
-	"$red  /     \ $reset"   
-	"$red()|     | $reset"        
-	"$red  \____ / $reset"  
-	"$red       () $reset"
+	"$yellow   ____() $reset" 
+	"$yellow  /     \ $reset"   
+	"$yellow()|     | $reset"        
+	"$yellow  \____ / $reset"  
+	"$yellow       () $reset"
 ) 
 
 debian=(
