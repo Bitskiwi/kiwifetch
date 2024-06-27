@@ -3,9 +3,8 @@
 A small fetch script written only in Shell
 ---
 ## Install
-1. run in bash: `cd ~ && git clone "https://github.com/bitskiwi/kiwifetch "`
-2. open .bashrc in whatever editor you use unless it's emacs then please rm -rf your bootloader
-3. add `alias kiwifetch='. ~/kiwifetch/src/main.sh'`
+1. clone the repo, or download as zip
+2. run install.sh
 ## Info:
 - User@Host
 - Kernel Release
