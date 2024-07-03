@@ -4,8 +4,8 @@ arch=(
 	"$cyan    /\    $reset"
 	"$cyan   /\ \   $reset"
 	"$cyan  / __ \  $reset"
-	"$cyan /_|  |_\ $reset"
-	"$cyan|/      \|$reset"
+	"$cyan / (  ) \ $reset"
+	"$cyan|_/    \_|$reset"
 ) 
 
 ubuntu=(

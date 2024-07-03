@@ -72,14 +72,16 @@ esac
 
 dot="\uf444"
 pad="    "
+line_h="\u2500\u2500\u2500\u2500\u2500"
 
 # Print to screen
 
-echo -e "${logo[0]} \uf007  $user@$host"
-echo -e "${logo[1]} \uf109  $kernel"
-echo -e "${logo[2]} \uf31a  $distro $architecture"
-echo -e "${logo[3]} \ue795  $sh"
-echo -e "${logo[4]} \ue22b  $white$dot $red$dot $yellow$dot $green$dot $blue$dot $cyan$dot $magenta$dot $black$dot $reset"
-echo
+echo -e "\u256d$line_h$line_h\u252c\u2500\u256e"
+echo -e "\u2502${logo[0]}\u2502$red\uf007$reset\u2502$red$user@$host$reset" 
+echo -e "\u2502${logo[1]}\u2502$yellow\uf109$reset\u2502$yellow$kernel$reset" 
+echo -e "\u2502${logo[2]}\u2502$green\uf31a$reset\u2502$green$distro $architecture$reset" 
+echo -e "\u2502${logo[3]}\u2502$cyan\ue795$reset\u2502$cyan$sh$reset" 
+echo -e "\u2502${logo[4]}\u2502$blue\ue22b$reset\u2502 $white$dot $red$dot $yellow$dot $green$dot $blue$dot $cyan$dot $magenta$dot $black$dot $reset" 
+echo -e "\u2570$line_h$line_h\u2534\u2500\u256f"
 
 cd $prev_dir
